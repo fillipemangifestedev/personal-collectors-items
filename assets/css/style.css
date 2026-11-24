@@ -225,11 +225,11 @@ footer {
     justify-content: center;
 
     width: 100%;
-    max-width: 1440px;
 }
 
 /* daily */
-.daily {
+.daily,
+.daily-product {
     display: flex;
     justify-content: center;
 
@@ -243,8 +243,14 @@ footer {
 }
 
 /* support-text */
-.support-text {
+.support-text,
+.support-text-product {
+    display: flex;
+    justify-content: center;
+
     padding: 40px 0;
+
+    width: 100%;
 
     color: var(--txt-color-white);
 }
@@ -347,4 +353,16 @@ footer {
     width: 100%;
 
     color: var(--txt-color-white);
+}
+
+/*================================================================================ */
+/* product-9.html */
+.daily-product,
+.support-text-product {
+    color: var(--txt-color-blue);
+    background-color: var(--background-color-white);
+}
+
+.daily-product {
+    border-bottom: 1px solid var(--background-color-blue);
 }
