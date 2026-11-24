@@ -1,0 +1,113 @@
+/* style global */
+:root {
+    /* layout */
+    --max-width: 1440px;
+
+    --line-blue: 1px solid var(--background-color-blue);
+    --line-white: 1px solid var(--background-color-white);
+
+    /* color */
+    --txt-color-blue: #032D68;
+    --txt-color-white: #FCFCFA;
+
+    /* background-color */
+    --background-color-blue: #032D68;
+    --background-color-white: #FCFCFA;
+
+    /*================================= typography =================================*/
+    /* font-family */
+    --primary-font: url(../fonts/Archivo_Black/ArchivoBlack-Regular.ttf);
+    --secondary-font: url(../fonts/Roboto_Mono/static/RobotoMono-Regular.ttf);
+    --tertiary-font: url(../fonts/Roboto_Mono/static/RobotoMono-Bold.ttf);
+
+    /* font-size */
+    --h-1-font-size: clamp(3.125rem, 1.875rem + 6.25vw, 7.5rem);
+    --h-2-font-size: clamp(1.5rem, 0.8571rem + 3.2143vw, 3.75rem);
+    --h-3-font-size: clamp(1.125rem, 0.7321rem + 1.9643vw, 2.5rem);
+    --h-4-font-size: clamp(1rem, 0.6607rem + 1.6964vw, 2.1875rem);
+    --p-1-font-size: clamp(0.875rem, 0.7679rem + 0.5357vw, 1.25rem);
+    --p-2-font-size: clamp(0.875rem, 0.6964rem + 0.8929vw, 1.5rem);
+    --c-1-2-font-size: clamp(0.625rem, 0.5357rem + 0.4464vw, 0.9375rem);
+    --a-font-size: clamp(1.125rem, 0.9107rem + 1.0714vw, 1.875rem);
+
+    /* line-height */
+    --line-80-line-height: 80%;
+    --line-120-line-height: 120%;
+
+    /* letter-spacing */
+    --letter--6-letter-spacing: -0.06em;
+    --letter--1-letter-spacing: -0.01em;
+}
+
+/*================================================================================= */
+/* typography global */
+h1 {
+    font: var(--h-1-font-size)/var(--line-80-line-height);
+    letter-spacing: var(--letter--6-letter-spacing);
+}
+
+h2 {
+    font-size: var(--h-2-font-size);
+    letter-spacing: var(--letter--6-letter-spacing);
+}
+
+h3 {
+    font-size: var(--h-3-font-size);
+}
+
+h4 {
+    font-size: var(--h-4-font-size);
+}
+
+h1,
+h2,
+h3,
+h4,
+a {
+    font-family: var(--primary-font);
+}
+
+h2,
+h3,
+h4,
+p,
+a,
+caption {
+    line-height: var(--line-120-line-height);
+}
+
+h3,
+h4,
+p,
+a,
+caption {
+    letter-spacing: var(--letter--1-letter-spacing);
+}
+
+/*================================================================================= */
+/* reset global */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+/*================================================================================ */
+/* index.html */
+
+/* start */
+html {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
+
+img {
+    display: block;
+
+    max-width: 100%;
+
+    height: auto;
+}
