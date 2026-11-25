@@ -221,7 +221,8 @@
 
   .about-img-1,
   .about-img-2,
-  .about-img-3 {
+  .about-img-3,
+  .about-img-4 {
     left: 0;
   }
 }
@@ -244,7 +245,8 @@
 
   .about-img-1,
   .about-img-2,
-  .about-img-3 {
+  .about-img-3,
+  .about-img-4 {
     width: clamp(70px, 24vw, 200px);
   }
 
@@ -253,7 +255,8 @@
     transform: rotate(15deg);
   }
 
-  .about-img-2 {
+  .about-img-2,
+  .about-img-4 {
     transform: rotate(-15deg);
   }
 }
