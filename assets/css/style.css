@@ -212,7 +212,7 @@ header {
     transform: scale(1.7);
 }
 
-.header-img a:hover,
+a.img-link:hover,
 .header-link a:hover {
     border-bottom: 2px solid var(--background-color-white);
 }
@@ -336,8 +336,8 @@ footer {
 
 .name a,
 .name-product a {
-    font-size: var(--h-2-font-size);
-    letter-spacing: var(--letter--6-letter-spacing);
+    font-size: var(--h-3-font-size);
+    letter-spacing: var(--letter--1-letter-spacing);
 
     transition: 0.6s ease;
 }
@@ -504,3 +504,57 @@ footer {
 }
 
 /*================================================================================ */
+/* about.html */
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 65px;
+    padding: 48px 0;
+
+    border-bottom: 2px solid var(--background-color-white);
+}
+
+.about-text {
+    width: 752px;
+
+    color: var(--txt-color-white);
+}
+
+.about-img {
+    display: flex;
+    flex-direction: column;
+
+    position: absolute;
+    z-index: 5;
+
+    top: 90px;
+
+    gap: 846px;
+}
+
+.about-img-1,
+.about-img-3 {
+    position: relative;
+
+    left: -490px;
+
+    transform: rotate(25deg);
+}
+
+.about-img-2 {
+    position: relative;
+
+    left: 490px;
+
+    transform: rotate(-25deg);
+}
+
+.about-img-1,
+.about-img-2,
+.about-img-3 {
+    width: 200px;
+    height: auto;
+}
