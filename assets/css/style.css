@@ -297,7 +297,7 @@ footer {
 }
 
 .collection-milk img {
-    padding: 42px 120px;
+    padding: 42px clamp(1.5rem, 8.33vw, 7.5rem);
 
     width: 100%;
     height: auto;
@@ -451,14 +451,17 @@ footer {
 
     gap: 10px;
 
-    width: 532px;
+    width: 100%;
+    max-width: 532px;
 
     font-size: var(--p-1-font-size);
     font-weight: var(--roboto-400-font-weight);
 }
 
 .collection-text-product-button button {
-    padding: 25px 216px;
+    width: 100%;
+    max-width: 549px;
+    padding: 25px 10rem;
 
     font: var(--roboto-700-font-weight) var(--p-2-font-size)/var(--line-120-line-height) var(--secondary-font);
     letter-spacing: var(--letter--1-letter-spacing);
@@ -489,7 +492,8 @@ footer {
 }
 
 .suggestion-collection-text p {
-    width: 342px;
+    width: 100%;
+    max-width: 342px
 }
 
 /* name-product */
@@ -518,7 +522,8 @@ footer {
 }
 
 .about-text {
-    width: 752px;
+    width: 100%;
+    max-width: 752px;
 
     color: var(--txt-color-white);
 }

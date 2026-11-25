@@ -2,35 +2,267 @@
  RESPONSIVE (desktop-first)
    ================================================ */
 
-/* GLOBAL (header + footer, presentes em todas as paginas) */
+/* GLOBAL */
+@media (hover: none) {
+
+  .header-img img:hover,
+  .collection-milk a:hover,
+  .suggestion-collection-milk a:hover,
+  .collection-text-product-button button:hover {
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+  }
+
+  .header-img img:hover,
+  .collection-milk a:hover,
+  .suggestion-collection-milk a:hover,
+  .collection-text-product-button button:hover {
+    transform: none;
+  }
+}
 
 /* ---------- ate 768px (tablet pequeno) ---------- */
+@media (max-width: 768px) {
+
+  .header-link {
+    gap: 20px;
+  }
+
+  .name,
+  .name-product {
+    padding: 32px 0;
+
+    text-align: center;
+  }
+
+  .links,
+  .links-product {
+    padding: 32px 0;
+  }
+
+  .rights {
+    flex-wrap: wrap;
+
+    gap: 8px 24px;
+    padding: 32px 0;
+  }
+
+  .daily,
+  .daily-product {
+    padding: 40px 0 36px 0;
+  }
+
+  .support-text,
+  .support-text-product {
+    padding: 28px 0;
+
+    text-align: center;
+  }
+}
 
 /* ---------- ate 480px (celular) ---------- */
+@media (max-width: 480px) {
+
+  :root {
+    --a-font-size: 1rem;
+    --h-1-font-size: clamp(2.25rem, 11vw, 3.125rem);
+  }
+
+  h1 {
+    line-height: 1;
+  }
+
+  header {
+    flex-wrap: wrap;
+
+    gap: 4px 16px;
+  }
+
+  .header-link {
+    gap: 16px;
+  }
+
+  .header-link a,
+  a.img-link {
+    padding-block: 10px;
+  }
+
+  .daily,
+  .daily-product {
+    padding: 28px 0 24px 0;
+  }
+
+  .support-text,
+  .support-text-product {
+    padding: 20px 0;
+  }
+}
 
 /*================================================================================= */
 /* index.html */
 
 /* ---------- ate 1024px (tablet) ---------- */
+@media (max-width: 1024px) {
+
+  .collection-milk {
+    padding: 64px 0;
+  }
+}
 
 /* ---------- ate 768px (tablet pequeno) ---------- */
+@media (max-width: 768px) {
+
+  .collection {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .collection-milk {
+    padding: 48px 0;
+  }
+
+  .collection-milk img {
+    max-width: min(100%, 420px);
+  }
+
+  .collection-text {
+    padding-inline: 16px;
+  }
+}
 
 /* ---------- ate 480px (celular) ---------- */
+@media (max-width: 480px) {
+
+  .collection-milk {
+    padding: 32px 0;
+  }
+}
 
 /*================================================================================= */
-/* about.html */
+/* product.html */
 
 /* ---------- ate 1024px (tablet) ---------- */
+@media (max-width: 1024px) {
+
+  .collection-text-product {
+    gap: 64px;
+    padding: 28px 24px;
+  }
+
+  .suggestion-collection-milk {
+    padding: 32px 16px;
+  }
+}
 
 /* ---------- ate 768px (tablet pequeno) ---------- */
+@media (max-width: 768px) {
+
+  .collection-product,
+  .suggestion-product {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .collection-product-img {
+    padding: 32px 16px;
+  }
+
+  .collection-product-img img,
+  .suggestion-collection-milk img {
+    max-width: min(100%, 420px);
+  }
+
+  .collection-text-product {
+    gap: 40px;
+    padding: 32px 16px;
+  }
+
+  .suggestion-collection-milk {
+    padding: 40px 16px;
+  }
+
+  .suggestion-collection-text {
+    margin-top: 24px;
+  }
+}
 
 /* ---------- ate 480px (celular) ---------- */
+@media (max-width: 480px) {
+
+  .collection-text-product {
+    gap: 32px;
+  }
+}
 
 /*================================================================================ */
-/* reserve.html */
+/* about.html */
+
+/* ---------- ate 1280px ---------- */
+@media (max-width: 1280px) {
+
+  .about-img {
+    position: static;
+
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    gap: clamp(0.5rem, 4vw, 3rem);
+    padding-block: 32px;
+
+    width: 100%;
+  }
+
+  .about-img-1,
+  .about-img-2,
+  .about-img-3 {
+    left: 0;
+  }
+}
 
 /* ---------- ate 1024px (tablet) ---------- */
+@media (max-width: 1024px) {
+
+  .about {
+    gap: 48px;
+  }
+}
 
 /* ---------- ate 768px (tablet pequeno) ---------- */
+@media (max-width: 768px) {
+
+  .about {
+    gap: 32px;
+    padding: 32px 0;
+  }
+
+  .about-img-1,
+  .about-img-2,
+  .about-img-3 {
+    width: clamp(70px, 24vw, 200px);
+  }
+
+  .about-img-1,
+  .about-img-3 {
+    transform: rotate(15deg);
+  }
+
+  .about-img-2 {
+    transform: rotate(-15deg);
+  }
+}
 
 /* ---------- ate 480px (celular) ---------- */
+@media (max-width: 480px) {
+
+  .about-img {
+    gap: 0;
+    padding-block: 24px;
+  }
+}
